@@ -1,4 +1,4 @@
-// Form Validation
+
 document.addEventListener('DOMContentLoaded', function () {
     const form = document.getElementById('contactForm');
     form.addEventListener('submit', function (event) {
@@ -36,7 +36,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
         if (isValid) {
             form.reset();
-            // You can add further actions here, like sending the form data to a server
             alert('Form submitted successfully!');
         }
     });
@@ -54,7 +53,6 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     function isEmail(email) {
-        // Basic email validation
         return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
     }
 });
